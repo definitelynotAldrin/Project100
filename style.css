@@ -252,7 +252,7 @@ nav ul li a:hover{
 .info__section__container{
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
+    
 }
 
 .info__icon__box__container{
@@ -490,4 +490,37 @@ nav ul li a:hover{
 
 .scenario__card:hover{
     transform: translateX(-8px);
+}
+
+#service-area-section{
+    padding: 5rem 0;
+    background-color: var(--background);
+}
+
+.service__area__section__container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service__area__cards__container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.25rem;
+}
+
+.service__area__card{
+    padding: 1.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--secondary);
+    background-color: var(--semi-white);
+    border-radius: 6px;
+    border-left: 4px solid var(--primary);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service__area__card:hover{
+    transform: translateX(8px);
+    border-left-color: var(--accent);
 }
