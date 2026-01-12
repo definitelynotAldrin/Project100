@@ -33,7 +33,7 @@ header{
     
 }
 
-.logo__container{
+.site__logo{
     font-size: 1.3rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -523,4 +523,65 @@ nav ul li a:hover{
 .service__area__card:hover{
     transform: translateX(8px);
     border-left-color: var(--accent);
+}
+
+footer{
+    background-color: var(--secondary);
+    padding: 3.75rem 0 0 0;
+}
+
+.footer__section__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+}
+
+.footer__grid__section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__column__title{
+    font-size: 1.25rem;
+    color: var(--accent);
+}
+
+.footer__description{
+    font-size: 1rem;
+    color: var(--semi-white);
+}
+
+.footer__grid__section ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer__grid__section ul li a{
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: var(--semi-white);
+}
+
+.strong__text{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.footer__copyright{
+    max-width: 1200px;
+    margin: 2rem auto 0 auto;
+    border-top: 1px solid var(--primary);
+    padding: 1.875rem;
+    text-align: center;
+}
+
+.footer__copyright span{
+    font-size: 1rem;
+    color: var(--semi-white);
+
 }
