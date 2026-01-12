@@ -406,9 +406,48 @@ nav ul li a:hover{
     transform: translateY(-10px);
 }
 
-#scenario-section{
+#logo-slider{
     padding: 5rem 0;
     background-color: var(--background);
+}
+
+.logo__slider__section__container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.logo__slider__container{
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.logo__track{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 3rem;
+    animation: animation 20s linear infinite;
+}
+
+.logo__track img{
+    height: 50%;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo__slider__container:hover .logo__track{
+    animation-play-state: paused; 
+}
+
+@keyframes animation{
+    from {transform: translateX(0);}
+    to {transform: translateX(-50%);}
+}
+
+#scenario-section{
+    padding: 5rem 0;
+    background-color: var(--semi-white);
 }
 
 .scenario__section__container{
