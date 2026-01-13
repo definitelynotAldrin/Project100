@@ -264,7 +264,7 @@ nav ul li a:hover{
 
 .info__icon__box{
     background: var(--semi-white);
-    padding: 1.25rem;
+    padding: 2rem 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -283,7 +283,7 @@ nav ul li a:hover{
     background-color: var(--primary);
     color: var(--accent);
     border-radius: 50%;
-    margin-top: -55px;
+    margin-top: -65px;
 }
 
 .info__icon__box__content h1{
@@ -311,6 +311,7 @@ nav ul li a:hover{
     text-align: center;
     font-size: 2.25rem;
     font-weight: 800;
+    text-transform: capitalize;
     color: var(--secondary);
     margin-bottom: 1rem;
 }
@@ -524,6 +525,81 @@ nav ul li a:hover{
     transform: translateX(8px);
     border-left-color: var(--accent);
 }
+
+#faq-section{
+    padding: 5rem;
+    background-color: var(--background);
+}
+
+.faq__section__container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accordion__container{
+    max-width: 800px;
+    margin: 3rem auto 0 auto;
+}
+
+.accordion__item{
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.accordion__item:hover{
+    border-color: var(--primary);
+}
+
+.accordion__question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem 1.5rem;
+    background-color: var(--semi-white);
+    border-radius: 10px;
+}
+
+.accordion__question h3{
+    font-size: 1.125rem;
+    color: var(--secondary);
+    transition: color 0.3s ease;
+}
+
+.accordion__question .accordion__toggle{
+    color: var(--accent);
+    transition: transform 0.3s ease;
+}
+
+.accordion__toggle.active{
+    transform: rotate(45deg);
+}
+
+.accordion__answer{
+    display: none;
+    padding: 2.25rem 1.5rem;
+    border: 1px solid var(--semi-white);
+    border-top: none;
+    border-radius: 0 10px 10px 10px;
+    
+}
+
+.accordion__answer.active{
+    display: block;
+}
+
+.accordion__question.active{
+    background-color: var(--primary);
+    border-radius: 10px 10px 0 0;
+}
+
+.accordion__question.active .accordion__question__title{
+    color: var(--white);
+}
+
+
 
 footer{
     background-color: var(--secondary);
