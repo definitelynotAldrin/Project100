@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -62,10 +63,16 @@ nav ul li a:hover{
     color: var(--accent);
 }
 
-nav .toggle__menu, .nav__links .icon__close{
+nav .toggle__menu{
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
+    background: none;
+    border: none;
+    display: none;
+}
+
+nav .fa-xmark{
     display: none;
 }
 
@@ -76,9 +83,15 @@ nav .toggle__menu, .nav__links .icon__close{
     border: none;
     font-size: 1.125rem;
     font-weight: 700;
+    text-decoration: none;
     color: var(--secondary);
     background-color: var(--accent);
     transition: 0.1s ease;
+    text-align: center;
+}
+
+.hidden__button{
+    display: none;
 }
 
 .primary__button:hover{
@@ -309,7 +322,7 @@ nav .toggle__menu, .nav__links .icon__close{
 .info__details__container{
     padding: 5rem 0;
     text-align: center;
-    width: 75%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -598,7 +611,6 @@ nav .toggle__menu, .nav__links .icon__close{
     border: 1px solid var(--semi-white);
     border-top: none;
     border-radius: 0 10px 10px 10px;
-    
 }
 
 .accordion__answer p{
@@ -681,6 +693,118 @@ footer{
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px){
+     header{
+        padding: 1rem 2.5rem;
+    }
+
+    #banner{
+        clip-path: polygon(
+            0 0,
+            100% 0,
+            100% 95%,
+            50% 100%,
+            0 95%
+        );
+    }
+
+    #banner, #info-section, #service-section, #logo-slider,
+    #scenario-section, #service-area-section, #faq-section, footer{
+        padding: 5rem 2.25rem;
+    }
+
+    .nav__links{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        max-width: 380px;
+        width: 100%;
+        background-color: var(--secondary);
+        transform: translateX(100%);
+        flex-direction: column;
+        align-items: start;
+        gap: 1.875rem;
+        transition: transform 0.3s ease;
+        padding: 1.25rem 1.875rem;
+        padding-top: 4.5rem;
+        z-index: -100;
+    }
+
+    .nav__links.active{
+        transform: translateX(0);
+        z-index: 10;
+    }
+
+    nav .nav__links li a{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .primary__button{
+        display: none;
+    }
+
+    .hidden__button{
+        display: block;
+        width: 100%;
+        padding: 0.875rem;
+    }
+
+   nav .toggle__menu{
+        display: block;
+        position: relative;
+        z-index: 2000;
+    }
+
+    nav .toggle__menu.active .fa-bars{
+        display: none;
+    }
+
+    nav .toggle__menu.active .fa-xmark{
+        display: block;
+    }
+
+    .hero__form__container{
+        max-width: 480px;
+    }
+
+    .info__icon__box__container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
+    .info__details__container{
+        text-align: center;
+        max-width: 850px;
+    }
+
+    .service__cards__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service__card{
+        padding: 3rem 1.5rem;
+    }
+
+    .scenario__cards__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.875rem;
+    }
+
+     .service__area__cards__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer{
+        padding: 3.75rem 1.5rem;
+        padding-bottom: 0;
+    }
+}
+
+
+
 @media (max-width: 768px){
 
     header{
@@ -696,29 +820,49 @@ footer{
         top: 0;
         right: 0;
         height: 100%;
-        width: 280px;
+        max-width: 280px;
+        width: 100%;
         background-color: var(--secondary);
         transform: translateX(100%);
         flex-direction: column;
         align-items: start;
+        gap: 1.875rem;
         transition: transform 0.3s ease;
-        padding: 1.25rem 2rem;
+        padding: 1.25rem 1.875rem;
+        padding-top: 4.5rem;
+    }
+
+    nav .nav__links li a{
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    .primary__button{
+        display: none;
+    }
+
+    .hidden__button{
+        display: block;
+        width: 100%;
+        padding: 0.875rem;
     }
 
     .nav__links.active{
          transform: translateX(0);
     }
 
-    nav .toggle__menu, .nav__links .icon__close{
+    nav .toggle__menu{
         display: block;
+        position: relative;
+        z-index: 2000;
     }
 
-    .nav__links .icon__close{
-        margin-left: 13rem;
-    }
-
-    .primary__button{
+    nav .toggle__menu.active .fa-bars{
         display: none;
+    }
+
+    nav .toggle__menu.active .fa-xmark{
+        display: block;
     }
 
     .section__title{
@@ -739,9 +883,18 @@ footer{
         );
     }
 
+    #info-section, #service-section, #logo-slider,
+    #scenario-section, #service-area-section, #faq-section, footer{
+        padding: 7rem 1.5rem;
+    }
+
     .banner__container{
         flex-direction: column;
         padding: 0 1.5rem;
+    }
+
+    .hero__container{
+        gap: 1.5rem;
     }
 
     .hero__container .hero__title{
@@ -753,7 +906,9 @@ footer{
     }
 
     .hero__container .hero__button__cta{
-        font-size: 1rem;
+        font-size: 1.125rem;
+        text-align: center;
+        width: 100%;
     }
 
     .hero__form__container .hero__form__title{
@@ -772,12 +927,17 @@ footer{
         font-size: 1rem;
     }
 
-    #info-section{
-        padding: 5rem 1.5rem;
-    }
-
     .info__icon__box__container{
         grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    .info__icon__box{
+        padding: 3rem 1.5rem;
+    }
+
+    .info__icon__box i{
+        margin-top: -80px;
     }
 
     .info__details__container{
@@ -794,13 +954,15 @@ footer{
         font-size: 1rem;
     }
 
-    #service-section{
-        padding: 5rem 1.5rem;
-    }
-    
     .service__cards__container{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .service__card{
+        padding: 3rem 1.25rem;
+    }
+
+
 
     .service__card .service__card__icon{
         font-size: 2.25rem;
@@ -812,21 +974,14 @@ footer{
 
     .service__cards__content .service__card__description{
         font-size: 1rem;
-        color: var(--text);
-
     }
 
-
-    #logo-slider{
-        padding: 5rem 1.5rem;
+    .service__card__lists{
+        gap: 0.6rem;
     }
-    
+
     .logo__track img{
         height: 70px;
-    }
-
-    #scenario-section{
-        padding: 5rem 1.5rem;
     }
 
     .scenario__cards__container{
@@ -836,17 +991,10 @@ footer{
     }
 
     
-    #service-area-section{
-        padding: 5rem 1.5rem;
-    }
-    
     .service__area__cards__container{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    #faq-section{
-        padding: 5rem 1.5rem;
-    }
 
     .accordion__container{
         width: 100%;
@@ -857,3 +1005,4 @@ footer{
         padding-bottom: 0;
     }
 }
+

@@ -32,15 +32,16 @@ accordion.forEach(question =>{
 });
 
 
-const openMenu = document.querySelector('.toggle__menu');
-const closeMenu = document.querySelector('.icon__close');
+const toggleMenu = document.querySelector('.toggle__menu');
+// const closeMenu = document.querySelector('.icon__close');
 const nav = document.querySelector('.nav__links');
 
-openMenu.addEventListener('click', () => {
-    nav.classList.add('active');
+toggleMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    toggleMenu.classList.toggle('active');
 });
 
-closeMenu.addEventListener('click', () => {
-    nav.classList.remove('active');
-});
+// closeMenu.addEventListener('click', () => {
+//     nav.classList.('active');
+// });
 
