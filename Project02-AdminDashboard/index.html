@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../Project02-AdminDashboard/css/main.css">
+    <link rel="stylesheet" href="../Project02-AdminDashboard/css/layout.css">
+    <link rel="stylesheet" href="../Project02-AdminDashboard/css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/39d1af4576.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard__main__container">
+
+        <aside class="side__bar">
+            <div class="side__menu">
+                <div class="logo__container">
+                    <img src="../Project02-AdminDashboard/assets/logo.png" alt="" class="logo">
+                </div>
+                <nav>
+                    <ul class="nav__links">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>dashboard</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">login</a>
+                                </li>
+                                <li>
+                                    <a href="#">register</a>
+                                </li>
+                                 <li>
+                                    <a href="#">forgot password</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-file"></i>
+                                    <span>pages</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">login</a>
+                                </li>
+                                <li>
+                                    <a href="#">register</a>
+                                </li>
+                                 <li>
+                                    <a href="#">forgot password</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-window-restore"></i>
+                                    <span>application</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">mail box</a>
+                                </li>
+                                <li>
+                                    <a href="#">chat</a>
+                                </li>
+                                 <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-object-group"></i>
+                                    <span>UI component</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">elements</a>
+                                </li>
+                                 <li>
+                                    <a href="#">components</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-chart-bar"></i>
+                                    <span>Widgets</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">Chart boxes 1</a>
+                                </li>
+                                 <li>
+                                    <a href="#">profile box</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-rectangle-list"></i>
+                                    <span>forms</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">widgets</a>
+                                </li>
+                                <li>
+                                    <a href="#">Elements</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">
+                                <div class="nav__item__left">
+                                    <i class="fa-regular fa-circle"></i>
+                                    <span>charts</span>
+                                </div>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                            <ul class="dropdown__links">
+                                <li>
+                                    <a href="#">chartJS</a>
+                                </li>
+                                <li>
+                                    <a href="#">apex charts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__link"></a></li>
+                        <li class="nav__item"><a href="" class="nav__link"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="main__content">
+            <header class="top__bar">
+                <div class="search__bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="search__input" placeholder="Search here...">
+                </div>
+
+                <div class="profile__section">
+                    <div class="notification__section">
+                        <div class="notification__content message__notification">
+                            <i class="fa-regular fa-bell notification__icon"></i>
+                        </div>
+                        <div class="notification__content message__notification">
+                            <i class="fa-regular fa-comment notification__icon"></i>
+                        </div>
+                    </div>
+                    <div class="profile__container">
+                        <div class="profile__image__container">
+                            <img src="./assets/Profile (1).png" alt="Profile Picture" class="profile__image">
+                        </div>
+                        <div class="profile__information">
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="content__container">
+                
+            </section>
+        </main>
+
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
