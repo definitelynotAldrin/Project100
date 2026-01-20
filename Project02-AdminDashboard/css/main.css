@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat",sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -39,6 +39,7 @@ body{
 
 .side__bar{
     overflow-y: auto;
+    min-width: 290px;
 }
 
 .main__content{
@@ -47,4 +48,10 @@ body{
 
 .top__bar{
     background-color: var(--primary-color);
+}
+
+.content__container{
+    padding: 2.25rem;
+    background-color: var(--primary-color);
+    border-radius: 10px;
 }

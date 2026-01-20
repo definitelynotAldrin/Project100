@@ -73,6 +73,7 @@ nav .nav__links .nav__item .nav__link{
     color: var(--text);
 }
 
+
 nav .nav__links .nav__item .nav__link .nav__item__left{
     display: flex;
     align-items: center;
@@ -120,7 +121,7 @@ nav .nav__links .nav__item .dropdown__links li a{
 }
 
 .top__bar{
-    padding: 2.85rem;
+    padding: 2.25rem;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -171,6 +172,7 @@ nav .nav__links .nav__item .dropdown__links li a{
     position: relative;
     font-size: 1.875rem;
     color: var(--text);
+    cursor: pointer;
 }
 
 .notification__content .notification__icon::after{
@@ -184,15 +186,20 @@ nav .nav__links .nav__item .dropdown__links li a{
     right: 0;
 }
 
+.profile__container{
+    position: relative;
+}
+
 .profile__image__container{
+    cursor: pointer;
     position: relative;
     background-color: rgba(13, 202, 240, 0.1);
     border: 2px solid var(--text);
     border-radius: 50%;
     padding: 0.85rem;
     overflow: hidden;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
 
 .profile__image__container .profile__image{
@@ -201,3 +208,80 @@ nav .nav__links .nav__item .dropdown__links li a{
     bottom: 0;
     left: 0;
 }
+
+.profile__information{
+    position: absolute;
+    bottom: -220px;
+    left: -130px;
+    background-color: var(--text-dark);
+    min-width: 200px;
+    padding: 1.875rem 1.25rem;
+    z-index: 3;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.profile__information.active{
+    opacity: 1;
+}
+
+.profile__information::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 15px solid var(--text-dark);
+}
+
+
+.profile__information .profile__information__row__1{
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+    color: var(--background);
+}
+
+.profile__information__row__1 h5{
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+
+.profile__information .profile__information__row__2{
+    padding: 1rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;   
+}
+
+.profile__information__row__2 .profile__links{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.875rem;
+}
+
+.profile__information__row__2 .profile__links .profile__item{
+    list-style: none;
+}
+
+.profile__information__row__2 .profile__links .profile__item .profile__link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--background);
+    font-size: 0.875rem;
+}
+
+
