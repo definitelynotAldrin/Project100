@@ -45,7 +45,7 @@ const profileInfo = document.querySelector('.profile__information');
 
 function showProfile(){
     profileInfo.classList.add('active');
-}
+}   
 
 function hideProfile() {
     profileInfo.classList.remove('active');
