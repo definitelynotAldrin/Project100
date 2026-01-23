@@ -4,6 +4,11 @@ const nav__link = document.querySelectorAll('.nav__link');
 
 nav__link.forEach(link => {
     link.addEventListener('click', (e) => {
+
+        if(link.classList.contains('not__dropdown')){
+            return;
+        }
+
         e.preventDefault();
 
         const dropdown = link.nextElementSibling;
@@ -27,12 +32,12 @@ nav__link.forEach(link => {
             }
         });
 
-        console.log('Working!!');
 
         if(!isActive){
             dropdown.classList.add('active');
             angle_icon.classList.add('active');
         }
+        
 
     });
 });
@@ -94,3 +99,19 @@ profileInfo.addEventListener('mouseleave', hideProfile);
 // profileWrapper.addEventListener('mouseleave', () => {
 //   profileInfo.classList.remove('active');
 // });
+
+
+
+
+
+// ---------------------navbar active state----------------
+
+const links = document.querySelectorAll('.nav-link');
+
+const currentPage = window.location.pathname.split('/').pop();
+
+links.forEach(link => {
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active');
+  }
+});

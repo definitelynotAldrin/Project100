@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../Project02-AdminDashboard/css/main.css">
-    <link rel="stylesheet" href="../Project02-AdminDashboard/css/layout.css">
-    <link rel="stylesheet" href="../Project02-AdminDashboard/css/components.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -21,12 +21,12 @@
         <aside class="side__bar">
             <div class="side__menu">
                 <div class="logo__container">
-                    <img src="../Project02-AdminDashboard/assets/logo.png" alt="" class="logo">
+                    <img src="../assets/logo.png" alt="" class="logo">
                 </div>
                 <nav>
                     <ul class="nav__links">
                         <li class="nav__item">
-                            <a href="./index.html" class="nav__link not__dropdown">
+                            <a href="../index.html" class="nav__link not__dropdown">
                                 <div class="nav__item__left">
                                     <i class="fa-solid fa-house"></i>
                                     <span>dashboard</span>
@@ -55,13 +55,13 @@
                             </a>
                             <ul class="dropdown__links">
                                 <li>
-                                    <a href="./pages/login.html">login</a>
+                                    <a href="../pages/login.html">login</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/register.html">register</a>
+                                    <a href="../pages/register.html">register</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/forgot_password.html">forgot password</a>
+                                    <a href="../pages/forgot_password.html">forgot password</a>
                                 </li>
                             </ul>
                         </li>
@@ -75,10 +75,10 @@
                             </a>
                             <ul class="dropdown__links">
                                 <li>
-                                    <a href="./pages/mail_box.html">mail box</a>
+                                    <a href="../pages/mail_box.html">mail box</a>
                                 </li>
                                 <li>
-                                    <a href="./pages/chat.html">chat</a>
+                                    <a href="../pages/chat.html">chat</a>
                                 </li>
                                 <li>
                                     <a href="./pages/faq.html">FAQ</a>
@@ -176,7 +176,7 @@
                     </div>
                     <div class="profile__container">
                         <div class="profile__image__container">
-                            <img src="./assets/Profile (1).png" alt="Profile Picture" class="profile__image">
+                            <img src="../assets/Profile (1).png" alt="Profile Picture" class="profile__image">
                         </div>
                         <div class="profile__information">
                             <div class="profile__information__row__1">
@@ -212,163 +212,31 @@
             </header>
 
             <section class="content__container">
-                <div class="card__container header__card__container">
-                    <div class="card header__card card__blue">
-                        <div class="card__text__content">
-                            <h3 class="card__title">Total income</h3>
-                            <h1 class="card__counter">
-                                <span class="counter">579,000</span>
-                            </h1>
-                            <p class="card__discount">Saved 35%</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-up card__icon"></i>
-                    </div>
-                    <div class="card header__card card__cyan">
-                        <div class="card__text__content">
-                            <h3 class="card__title">Total Expenses</h3>
-                            <h1 class="card__counter">
-                                <span class="counter">79,000</span>
-                            </h1>
-                            <p class="card__discount">Saved 25%</p>
-                        </div>
-                        <i class="fa-solid fa-circle-arrow-down card__icon"></i>
-                    </div>
-                    <div class="card header__card card__purple">
-                        <div class="card__text__content">
-                            <h3 class="card__title">Cash on Hand</h3>
-                            <h1 class="card__counter">
-                                <span class="counter">129,000</span>
-                            </h1>
-                            <p class="card__discount">Saved 55%</p>
-                        </div>
-                        <i class="fa-solid fa-hand-holding-dollar card__icon"></i>
-                    </div>
-                    <div class="card header__card card__teal">
-                        <div class="card__text__content">
-                            <h3 class="card__title">Net profit margin</h3>
-                            <h1 class="card__counter">
-                                <span class="counter">179,000</span>
-                            </h1>
-                            <p class="card__discount">Saved 35%</p>
-                        </div>
-                        <i class="fa-solid fa-chart-line card__icon"></i>
-                    </div>
-                </div>
-                <div class="dashboard__charts__container">
-                    <div class="dashboard__chart__row__1">
-                        <div class="revenue__bar__graph dashboard__chart__row__card">
-                            <div class="chart__header__container">
-                                <div class="chart__header">
-                                    <h2 class="chart__title">AP & AR Balance</h2>
-                                    <h5 class="chart__subtitle">Avg. $5,309</h5>
-                                </div>
-                                <div class="chart__header__buttons">
-                                    <div class="chart__header__button">
-                                        <button class="chart__button monthly__button">
-                                            <span>Monthly</span>
-                                            <i class="fa-solid fa-arrow-down"></i>
-                                        </button>
-                                        <div class="chart__header__date">
-                                            <input type="text" placeholder="Search...">
-                                            <ul>
-                                                <li>
-                                                    <button class="active">Monthly</button>
-                                                </li>
-                                                <li>
-                                                    <button>monthly</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="chart__header__button">
-                                        <button class="chart__button annual__button">
-                                            <span>last year</span>
-                                            <i class="fa-solid fa-arrow-down"></i>
-                                        </button>
-                                        <div class="chart__header__date">
-                                            <input type="text" placeholder="Search...">
-                                            <ul>
-                                                <li>
-                                                    <button class="active">last year</button>
-                                                </li>
-                                                <li>
-                                                    <button>this year</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="login__container">
+                    <div class="login__wrapper">
+                        <h1 class="form__title">Log in</h1>
+                        <div class="form__wrapper">
+                            <div class="form__button__group">
+                                <a href="#" class="button__facebook">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <span>log in with facebook</span>
+                                </a>
+                                <a href="#" class="button__google">
+                                    <i class="fa-brands fa-google"></i>
+                                    <span>log in with google</span>
+                                </a>
                             </div>
-                            <div class="chart__content">
-                                <canvas id="myChart1"></canvas>
+                            <div class="separator">
+                                <span>or</span>
                             </div>
-                        </div>
-                        <div class="progress__ring progress__ring__income dashboard__chart__row__card">
-                            <div class="chart__header">
-                                <h2 class="chart__title">% of Income Budget</h2>
+                            <div class="form__input__group">
+                                <input type="email" placeholder="Enter your email">
+                                <input type="password" placeholder="Password">
+                                <button class="form__button">log in</button>
                             </div>
-                            <div class="chart__content">
-                                <div class="chart__wrapper">
-                                    <canvas id="progressChart1"></canvas>
-                                </div>
-                                <div class="chart__text">
-                                    <div class="chart__text__group">
-                                        <h6 class="chart__balance__title remaining">Balance</h6>
-                                        <p>-$18,570</p>
-                                    </div>
-                                    <div class="chart__text__group">
-                                        <h6 class="chart__balance__title balance">Balance</h6>
-                                        <p>$31,430</p>
-                                    </div>
-                                </div>
-                                 <div class="chart__button__wrapper">
-                                    <a href="" class="chart__button progress__ring__button">view full report</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progress__ring progress__ring__expenses dashboard__chart__row__card">
-                            <div class="chart__header">
-                                <h2 class="chart__title">% of Expenses Budget</h2>
-                            </div>
-                            <div class="chart__content">
-                                <div class="chart__wrapper">
-                                    <canvas id="progressChart2"></canvas>
-                                </div>
-                                <div class="chart__text">
-                                    <div class="chart__text__group">
-                                        <h6 class="chart__balance__title remaining">Balance</h6>
-                                        <p>-$18,570</p>
-                                    </div>
-                                    <div class="chart__text__group">
-                                        <h6 class="chart__balance__title balance">Balance</h6>
-                                        <p>$31,430</p>
-                                    </div>
-                                </div>
-                                <div class="chart__button__wrapper">
-                                    <a href="" class="chart__button progress__ring__button">view full report</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dashboard__chart__row__2">
-                        <div class="expenses__bar__graph dashboard__chart__row__card">
-                            <div class="chart__header__container">
-                                <div class="chart__header">
-                                    <h2 class="chart__title">EBIT (Earnings Before Interest & Tax)</h2>
-                                </div>
-                            </div>
-                            <div class="chart__content">
-                                <canvas id="myChart2"></canvas>
-                            </div>
-                        </div>
-                        <div class="expenses__bar__graph dashboard__chart__row__card">
-                            <div class="chart__header__container">
-                                <div class="chart__header">
-                                    <h2 class="chart__title">Cost of goods / Services</h2>
-                                </div>
-                            </div>
-                            <div class="chart__content">
-                                <canvas id="myChart3"></canvas>
+                            <div class="form__additional__buttons">
+                                <a href="">Need an account? Sign Up</a>
+                                <a href="">Forget Password?</a>
                             </div>
                         </div>
                     </div>
@@ -387,10 +255,10 @@
 
 
 
-    <script src="./js/main.js"></script>
-    <script src="./js/chartButtons.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/chartButtons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/charts.js"></script>
+    <script src="../js/charts.js"></script>
 </body>
 
 </html>
