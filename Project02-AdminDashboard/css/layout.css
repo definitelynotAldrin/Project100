@@ -474,7 +474,7 @@ nav .nav__links .nav__item .dropdown__links li a{
 }
 
 
-.login__container{
+.page__container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -483,7 +483,7 @@ nav .nav__links .nav__item .dropdown__links li a{
     padding: 2rem;
 }
 
-.login__wrapper{
+.page__wrapper{
     border: 1px solid rgba(0, 0, 0, 0.1);
     min-width: 580px;
     display: flex;
@@ -492,15 +492,16 @@ nav .nav__links .nav__item .dropdown__links li a{
     border-radius: 8px;
 }
 
-.login__wrapper .form__title{
+.page__wrapper .form__title{
     padding: 2rem;
     padding-bottom: 0;
     font-size: 1.25rem;
+    text-transform: capitalize;
     color: var(--text-dark);
 }
 
 
-.login__wrapper .form__wrapper{
+.page__wrapper .form__wrapper{
     padding: 2rem;
     border-radius: 6px;
     background-color: var(--primary-color);
@@ -571,6 +572,17 @@ nav .nav__links .nav__item .dropdown__links li a{
     font-size: 0.875rem;
 }
 
+.form__checkbox{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form__checkbox label{
+    font-size: 0.875rem;
+    color: var(--text);
+}
+
 .form__input__group input:focus{
     outline: 0;
 }
@@ -601,7 +613,7 @@ nav .nav__links .nav__item .dropdown__links li a{
     gap: 1.5rem;
 }
 
-.form__additional__buttons a{
+.form__additional__buttons a, .form__additional__buttons p{
     text-decoration: none;
     font-size: 0.875rem;
     color: var(--text);
