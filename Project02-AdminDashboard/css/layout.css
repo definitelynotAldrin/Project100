@@ -77,6 +77,14 @@ nav .nav__links .nav__item .nav__link .nav__item__left{
     gap: 0.75rem;
 }
 
+.nav__item__left .icon__item{
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav .nav__links .nav__item .nav__link .fa-angle-down{
     transition: 0.3s ease;
 }
@@ -86,7 +94,7 @@ nav .nav__links .nav__item .nav__link .fa-angle-down.active{
 }
 
 nav .nav__links .nav__item .dropdown__links{
-    padding-left: 1.875rem;
+    padding-left: 2.60rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -499,7 +507,6 @@ nav .nav__links .nav__item .dropdown__links li a{
     text-transform: capitalize;
     color: var(--text-dark);
 }
-
 
 .page__wrapper .form__wrapper{
     padding: 2rem;
