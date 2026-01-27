@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Google Sans', sans-serif;
+}
+
+:root{
+    --primary: #344F1F;        /* Dark Forest Green */
+    --primary-hover: #2a3f19;  /* Darker on hover */
+    --primary-light: #4a6e2c; /* Lighter variant */
+
+    /* SECONDARY - Supporting Color (Orange) */
+    --secondary: #F4991A;      /* Warm Orange */
+    --secondary-hover: #e08a15; /* Darker on hover */
+
+    /* NEUTRAL - Background Colors */
+    --bg-cream: #F2EAD3;       /* Cream/Beige background */
+    --bg-light: #F9F5F0;       /* Off-white/Lightest */
+
+    /* TEXT COLORS */
+    --text-dark: #1a1a1a;      /* Almost black */
+    --text-gray: #666666;      /* Gray for descriptions */
+    --text-light: #ffffff;     /* White text */
+
+    /* ACCENTS */
+    --accent: #F4991A;         /* Orange for CTAs/highlights */
+
+    /* SHADOW */
+    --shadow-sm: 0 2px 4px rgba(52, 79, 31, 0.1);
+    --shadow-md: 0 4px 8px rgba(52, 79, 31, 0.15);
+    --shadow-lg: 0 8px 16px rgba(52, 79, 31, 0.2);
+
+    /* OVERLAYS */
+    --overlay-dark: rgba(52, 79, 31, 0.8);
+    --overlay-light: rgba(249, 245, 240, 0.9);
+}
+
+
+/* ======== TYPOGRAPHY ========== */
+
+.text-xs{ font-size: 0.75rem;}
+.text-sm{ font-size: 0.875rem;}
+.text-base { font-size: 1rem;}
+.text-lg { font-size: 1.125rem;}
+.text-xl { font-size: 1.25rem;}
+.text-2xl { font-size: 1.5rem;}
+.text-3x1 { font-size: 2rem;}
+.text-4xl { font-size: 2.25rem;}
+.text-5xl { font-size: 3rem;}
+
+
