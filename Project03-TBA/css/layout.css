@@ -212,8 +212,13 @@ section{
     padding: 5rem 0;
 }
 
-#section-gallery{
+#section-about{
     background-color: var(--bg-cream);
+}
+
+
+#section-gallery{
+    background-color: var(--bg-light);
 }
 
 .section-text{
@@ -229,6 +234,66 @@ section{
 .section-text .section-description{
     color: var(--text-gray);
 }
+
+.section-about-text{
+    text-align: left;
+}
+
+.section-about-text .about-title span{
+    color: var(--accent);
+}
+
+.section-about-text .about-subtitle{
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.about-grid-item{
+    padding: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about-grid-item:hover{
+    transform: translateY(-8px);
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.about-grid-item h5{
+    letter-spacing: 2px;
+    color: var(--accent);
+}
+
+.about-grid-item h3{
+    text-transform: capitalize;
+    color: var(--text-gray);
+    margin: 0.25rem 0 1rem 0;
+}
+
+.about-grid-item p{
+    color: var(--text-gray);
+    font-size: 0.875rem;
+}
+
+.about-grid-item:hover{
+    transform: translateY(-10px);
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+.about-grid-item:hover h5,
+.about-grid-item:hover h3,
+.about-grid-item:hover p{
+    color: var(--text-light);
+}
+
 
 
 .gallery-grid{
