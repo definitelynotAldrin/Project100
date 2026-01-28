@@ -1,7 +1,3 @@
-// ============================================
-// GALLERY - Dynamic Image Loading
-// ============================================
-
 // Array of image paths
 const galleryImages = [
     './images/menu/dish1.jpg',
